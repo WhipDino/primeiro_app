@@ -1,23 +1,34 @@
-import { Text, View } from 'react-native';
+import { Text, View, StyleSheet } from 'react-native';
 
 export default function App(){
   return(
-    <View style={{
-      flex: 1,
-      backgroundColor: '#131016',
-      padding: 24
-    }}>
-      <Text style={{
-        color: '#FDFCFE',
-        fontSize: 24,
-        fontWeight: 'bold',
-        marginTop: 24
-        }}>Nome do evento</Text>
-      <Text style={{
-        color: '#6B6B6B',
-        fontSize: 16
-
-        }}>Sábado, 16 de março de 2024</Text>
+    <View style={styles.container}>
+      <Text style={styles.eventName}>
+        Nome do evento
+      </Text>
+      
+      <Text style={styles.eventDate}>
+        Sábado, 16 de março de 2024
+      </Text>
     </View>
   )
 }
+
+const styles = StyleSheet.create({
+container: {
+  flex: 1,
+  backgroundColor: '#131016',
+  padding: 24
+  },
+  eventName: {
+    color: '#FDFCFE',
+    fontSize: 24,
+    fontWeight: 'bold',
+     marginTop: 24
+  },
+  eventDate: {
+    color: '#6B6B6B',
+    fontSize: 16
+  }
+});
+
