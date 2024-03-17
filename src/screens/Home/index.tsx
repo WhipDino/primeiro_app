@@ -18,18 +18,20 @@ export function Home(){
         Sábado, 16 de março de 2024
       </Text>
 
-      <TextInput 
-      style={styles.input}
-      placeholder='Nome do participante'
-      placeholderTextColor='#6B6B6B'
-      keyboardType='email-address'
-      />
+      <View style={styles.form}>
+        <TextInput 
+        style={styles.input}
+        placeholder='Nome do participante'
+        placeholderTextColor='#6B6B6B'
+        keyboardType='email-address'
+        />
 
-      <TouchableOpacity style={styles.button} onPress={handleParticipantAdd}>
-        <Text style={styles.buttonText}>
-            +
-        </Text>
-      </TouchableOpacity>
+        <TouchableOpacity style={styles.button} onPress={handleParticipantAdd}>
+            <Text style={styles.buttonText}>
+                +
+            </Text>
+        </TouchableOpacity>
+      </View>
     </View>
   )
 }
