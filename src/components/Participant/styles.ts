@@ -10,21 +10,21 @@ export const styles = StyleSheet.create({
         marginBottom: 10
     },
     name: {
-       color: '#FFF',
-       flex: 1,
-       fontSize: 16,
-       marginLeft: 16 
+        color: '#FFF',
+        flex: 1,
+        fontSize: 16,
+        marginLeft: 16
     },
     buttonText: {
         color: '#FFF',
         fontSize: 24
-      },
-      button: {
+    },
+    button: {
         width: 56,
         height: 56,
         borderRadius: 5,
         backgroundColor: '#E23C44',
         alignItems: 'center',
         justifyContent: 'center'
-      }
+    }
 });
